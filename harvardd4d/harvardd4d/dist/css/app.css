@@ -7,3 +7,12 @@ body {
 	font-size: 14px;
 	/*color: whie;*/
 }
+
+.info {
+	background: none;
+	/*padding: 0px;*/
+}
+
+.even {
+	background: #87cefa;
+}
