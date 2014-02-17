@@ -1,18 +1,48 @@
 body {
-/*  min-height: 2000px;*/
   padding-top: 70px;
+  background: none;
 }
 
-.info p {
-	font-size: 14px;
-	/*color: whie;*/
+* {
+/*	color: white;*/
+}
+
+p {
+	font-size: 20px;
+	font-weight: 200;
 }
 
 .info {
-	background: none;
-	/*padding: 0px;*/
+	margin: 50px 55px;
+	background: rgba(225, 225, 225, .6);
+	padding: 30px;
 }
 
-.even {
-	background: #87cefa;
+html { 
+  background: url(../img/bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
+
+body, html {
+	height: 100%;
+}
+
+.outside {
+	height: 100%;
+	position: relative;
+}
+
+.message {
+	position: absolute;
+	bottom: 50%;
+	height: 10em;
+	margin-top: -5em;
+
+}
+
+/*.top {
+	background: rgba(225, 225, 225, .6);
+}*/
