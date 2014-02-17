@@ -14,7 +14,7 @@ p {
 
 .info {
 	margin: 50px 55px;
-	background: rgba(225, 225, 225, .6);
+	background: rgba(225, 225, 225, .7);
 	padding: 30px;
 }
 
@@ -44,13 +44,38 @@ body, html {
 }
 
 .panel-title {
-	font-size: 24px;
+	font-size: 20px;
 }
 
 .panel-body p {
 	font-size: 16px;
 }
 
+.info-pic {
+/*	height: 240px;
+	width: 320px;*/
+	max-width: 320px;
+}
+
+.board-pic {
+	height: 120px;
+	width: 120px;
+}
+
+.caption {
+	text-align: center;
+}
+
+.thumbnail {
+	background: none;
+	border: none;
+}
+
+.contact-pic {
+	height: 60px;
+	width: 60px;
+	padding: 10px;
+}
 /*.top {
 	background: rgba(225, 225, 225, .6);
 }*/
