@@ -27,7 +27,7 @@
     <![endif]-->
   </head>
 
-  <body>
+  <body data-spy='scroll' data-target='.navbar-collapse'>
 
     <!-- Fixed navbar -->
     <div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -44,7 +44,12 @@
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href='#programs'>Programs</a></li>
+            <li class='dropdown'>
+              <a href='#initiatives'>Initiatives</a>
+              <ul class='dropdown-menu'>
+                <li><a href='#initiatives'>Term-time project </a>
+              </ul>
+            </li>
             <li><a href="#updates">Updates</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
@@ -52,86 +57,242 @@
       </div>
     </div>
 
-    <div class="container">
-
-      <!-- Main component for a primary marketing message or call to action -->
-      <div class="jumbotron">
-        <h1>How are you using technology to impact the world?</h1>
-        <p>Developers for Development is a community of students interested in applying technology for social impact.</p>
+    <div class="outside">
+      <div class="message">
+        <div class="container info">
+          <center>
+            <h1>How are you using technology to impact the world?</h1>
+            <h3 style="font-weight: 200;">Harvard College Developers for Development is a community of students interested in applying technology for social impact.</h3>
+          </center>
+        </div>
       </div>
-
     </div> <!-- /container -->
 
-    <div class="container" id='about'>
+    <div class="container info" id="about">
 
       <!-- Main component for a primary marketing message or call to action -->
-      <div class="jumbotron info">
-        <h3>About D4D</h3>
-        <h4>Inspire. Innovate. Impact.</h4>
+      <div>
+        <h1>About D4D</h1>
+        <h3>Inspire. Innovate. Impact.</h3>
         <p>Harvard College Developers for Development (D4D) was founded in spring of 2012 by Alisa Nguyen, Victoria Gu, and Joy Ming in order to bring together two previously disparate communities--those interested in international development and those interested in technology--to help use "new" technologies to solve "old" problems in the developing world. D4D has worked to increase awareness for and involvement in social impact technology across the Harvard campus through projects, events, and more!</p>
+        <h3>Current leadership</h3>
+        <div class='row'>
+          <div class='col-md-3'>
+            <div class='thumbnail'>
+              <img src='dist/img/alisa.jpg' class='board-pic'>
+              <div class='caption'>
+                <h4>Alisa Nguyen</h4>
+                <p>Tech in the World Co-Director</p>
+              </div>
+            </div>
+          </div>
+          <div class='col-md-3'>
+            <div class='thumbnail'>
+              <img src='dist/img/victoria.jpg' class='board-pic'>
+              <div class='caption'>
+                <h4>Victoria Gu</h4>
+                <p>Tech in the World Co-Director</p>
+              </div>
+            </div>
+          </div>
+          <div class='col-md-3'>
+            <div class='thumbnail'>
+              <img src='dist/img/kevin.jpg' class='board-pic'>
+              <div class='caption'>
+                <h4>Kevin Sun</h4>
+                <p>ID Hack Director</p>
+              </div>
+            </div>
+          </div>
+          <div class='col-md-3'>
+            <div class='thumbnail'>
+              <img src='dist/img/joy.jpg' class='board-pic'>
+              <div class='caption'>
+                <h4>Joy Ming</h4>
+                <p>External and Internal Relations</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
     </div> <!-- /container -->
 
-    <div class="container" id='programs'>
+    <div class="container info" id='initiatives'>
 
       <!-- Main component for a primary marketing message or call to action -->
-      <div class="jumbotron info">
-        <h3>D4D Initiatives</h3>
+      <div>
+        <h1>D4D Initiatives</h1>
 
-        <h4>Term-time projects</h4>
-        <p>Groups of Harvard students are matched up for a semester with host organizations based in the local Boston area working on projects to promote international development. Previous projects have included working on mobile platform integration with the Kartis Project, digitizing data collection with the Harvard Humanitarian Initiative, and randomizing selection of houses based on satellite images with the special envoy for global health to the United Nations.</p>
+        <div class='panel-group' id='accordion'>
+          <div class='panel panel-default'>
+            <div data-toggle='collapse' data-parent='#accordion' href='#term-time' class='panel-heading'>
+              <h3 class='panel-title'>
+                Term-time projects
+              </h3>
+            </div>
+            <div id='term-time' class='panel-collapse collapse'>
+              <div class='panel-body'>
+                <p>Groups of Harvard students are matched up for a semester with host organizations based in the local Boston area working on projects to promote international development. Previous projects have included working on mobile platform integration with the Kartis Project, digitizing data collection with the Harvard Humanitarian Initiative, and randomizing selection of houses based on satellite images with the special envoy for global health to the United Nations.</p>
+                <h4>Term-time Projects Chair: TBA</h4>
+                <a class="btn btn-default" href="mailto:harvardd4d@gmail.com" role="button">Learn more »</a>
+                
+              </div>
+            </div>
+          </div>
 
 
-        <h4>Tech in the World</h4>
-        <p>Founded in 2012 by Brandon Liu and Josh Lee, the immersion trip became one of the D4D initiatives in 2013. Tech in the World seeks to provide a global, hands-on experience for top computer science students who want to apply their technical expertise to solve critical issues in the developing world. Students have travelled to Dar es Salaam, Tanzania to work on global health projects with local hospitals and clinics.</p>
-        <a class="btn btn-default" href="http://www.techintheworld.org" role="button">Learn more »</a>
+          <div class='panel panel-default'>
+            <div data-toggle='collapse' data-parent='#accordion' href='#idhack' class='panel-heading'>
+              <h3 class='panel-title'>
+                ID Hack
+              </h3>
+            </div>
+            <div id='idhack' class='panel-collapse collapse'>
+              <div class='panel-body'>
+                <div class='row'>
+                  <div class='col-md-4'>
+                    <img src='dist/img/idhack.jpg' class='info-pic'>
+                  </div>
+                  <div class='col-md-8'>
+                    <p>The largest collegiate hackathon for good, D4D has partnered with the MIT Global Poverty Initiative for the past 2 years to bring together hackers, international development enthusiasts, and NGOs in the greater Boston area to work on projects that will make an impact on the world.</p>
+                    <h4>ID Hack Director: Kevin Sun</h4>
+                    <a class="btn btn-default" href="http://idhack.developersfordevelopment.org" role="button">Learn more »</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+        
 
-        <h4>ID Hack</h4>
-        <p>The largest collegiate hackathon for good, D4D has partnered with the MIT Global Poverty Initiative for the past 2 years to bring together hackers, international development enthusiasts, and NGOs in the greater Boston area to work on projects that will make an impact on the world.</p>
-        <a class="btn btn-default" href="http://idhack.developersfordevelopment.org" role="button">Learn more »</a>
+          <div class='panel panel-default'>
+            <div data-toggle='collapse' data-parent='#accordion' href='#titw' class='panel-heading'>
+              <h3 class='panel-title'>
+                Tech in the World
+              </h3>
+            </div>
+            <div id='titw' class='panel-collapse collapse'>
+              <div class='panel-body'>
 
-        <h4>Discussions 4 Development</h4>
-        <p>Weekly Discussions 4 Development are spaces for Harvard students to converse about issues related to international development and technology. Students will share their projects ,experiences, and expertise, talk through case studies, invite relevant speakers, and discuss relevant current events.</p>
+                <div class='row'>
+                  <div class='col-md-4'>
+                    <img src='dist/img/titw.jpg' class='info-pic'>
+                  </div>
+                  <div class='col-md-8'>
+                    <p>Founded in 2012 by Brandon Liu and Josh Lee, the immersion trip became one of the D4D initiatives in 2013. Tech in the World seeks to provide a global, hands-on experience for top computer science students who want to apply their technical expertise to solve critical issues in the developing world. Students have travelled to Dar es Salaam, Tanzania to work on global health projects with local hospitals and clinics.</p>
+                    <h4>TITW Co-Directors: Alisa Nguyen and Victoria Gu</h4>
+                    <a class="btn btn-default" href="http://www.techintheworld.org" role="button">Learn more »</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
-        <h4>Jobs, internships, and opportunities</h4>
-        <p>With a database of over 70 organizations applying technology to international development, D4D has facilitated connections between students and organizations in various opportunities.</p>
+          <div class='panel panel-default'>
+            <div data-toggle='collapse' data-parent='#accordion' href='#discuss' class='panel-heading'>
+              <h3 class='panel-title'>
+                Discussions for Development
+              </h3>
+            </div>
+            <div id='discuss' class='panel-collapse collapse'>
+              <div class='panel-body'>
+                <p>Weekly Discussions 4 Development are spaces for Harvard students to converse about issues related to international development and technology. Students will share their projects ,experiences, and expertise, talk through case studies, invite relevant speakers, and discuss relevant current events.</p>
+                <h4>Discussions Chair: TBA</h4>
+                <a class="btn btn-default" href="mailto:harvardd4d@gmail.com" role="button">View schedule »</a>
+              </div>
+            </div>
+          </div>
 
-        <h4>Partnerships</h4>
-        <p>D4D is open to opportunities to work with groups interested in all aspects of international development or technology. Previous partnerships include those with Tech4Change; Digital Literacy Project; Harvard Innovation, Technology and Entrepreneurship Collaborative; Diagnostics for Global Health; and Harvard Students for Global Health.</p>
+          <div class='panel panel-default'>
+            <div data-toggle='collapse' data-parent='#accordion' href='#partnerships' class='panel-heading'>
+              <h3 class='panel-title'>
+                Partnerships
+              </h3>
+            </div>
+            <div id='partnerships' class='panel-collapse collapse'>
+              <div class='panel-body'>
+                
+                <div class='row'>
+                  <div class='col-md-4'>
+                    <img src='dist/img/hitec.png' class='info-pic'>
+                  </div>
+                  <div class='col-md-8'>
+                    <p>D4D is open to opportunities to work with groups interested in all aspects of international development or technology. Previous partnerships include those with Tech4Change; Digital Literacy Project; Harvard Innovation, Technology and Entrepreneurship Collaborative; Diagnostics for Global Health; and Harvard Students for Global Health.</p>
+                    <h4>Internal Relations Chair: TBA</h4>
+                    <a class="btn btn-default" href="mailto:harvardd4d@gmail.com" role="button">Propose a partnership »</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class='panel panel-default'>
+            <div data-toggle='collapse' data-parent='#accordion' href='#jobs' class='panel-heading'>
+              <h3 class='panel-title'>
+                Jobs, internships, and opportunities
+              </h3>
+            </div>
+            <div id='jobs' class='panel-collapse collapse'>
+              <div class='panel-body'>
+                <p>With a database of over 70 organizations applying technology to international development, D4D has facilitated connections between students and organizations in various opportunities.</p>
+                <h4>External Relations Chair: TBA</h4>
+                <a class="btn btn-default" href="mailto:harvardd4d@gmail.com" role="button">Learn more »</a>
+                <a class="btn btn-default" href="mailto:harvardd4d@gmail.com" role="button">Learn more »</a>
+              </div>
+            </div>
+          </div>
+        
+        </div>
 
       </div>
 
     </div> <!-- /container -->
 
-    <div class="container" id='updates'>
+    <div class="container info" id='updates'>
 
       <!-- Main component for a primary marketing message or call to action -->
-      <div class="jumbotron info">
-        <h3>D4D Updates</h3>
-        <h4>Inspire. Innovate. Impact.</h4>
-        <p>Harvard College Developers for Development (D4D) was founded in spring of 2012 by Alisa Nguyen, Victoria Gu, and Joy Ming in order to bring together two previously disparate communities--those interested in international development and those interested in technology--to help use "new" technologies to solve "old" problems in the developing world. D4D has worked to increase awareness for and involvement in social impact technology across the Harvard campus through projects, events, and more!</p>
+      <div>
+        <h1>D4D Updates</h1>
+        <h3>Stay updated with our <a href="lists.hcs.harvard.edu/mailman/listinfo/d4d-list">email list</a> and <a href="https://www.google.com/calendar/embed?src=m4m53cevmgoc8likqlb70ebfm8%40group.calendar.google.com&ctz=America/New_York">calendar</a>!</h3>
+        <!-- <iframe src="https://www.google.com/calendar/embed?src=m4m53cevmgoc8likqlb70ebfm8%40group.calendar.google.com&ctz=America/New_York" style="border: 0" width="400" height="300" frameborder="0" scrolling="no"></iframe> -->
       </div>
 
     </div> <!-- /container -->
 
-    <div class="container" id='contact'>
+    <div class="container info" id='contact'>
 
       <!-- Main component for a primary marketing message or call to action -->
-      <div class="jumbotron info">
-        <h3>Contact D4D</h3>
-        <p>Email: harvardd4d [at] gmail.com
+      <div>
+        <h1>Contact D4D</h1>
+        <p>We would love to hear from you!</p>
+        <div id='contact-pictures'>
+          <center>
+            <a href="mailto:harvardd4d@gmail.com"><img src="dist/img/email.png" class='contact-pic'></a>
+            <a href="http://www.twitter.com/harvardd4d"><img src="dist/img/twitter.png" class='contact-pic'></a>
+            <a href="http://www.facebook.com/developersfordevelopment"><img src="dist/img/facebook.png" class='contact-pic'></a>
+          </center>
+        </div>
+        
+        <!-- <p>Email: harvardd4d [at] gmail.com
         <br>Email list: lists.hcs.harvard.edu/mailman/listinfo/d4d-list
         <br>Facebook: www.facebook.com/developersfordevelopment<br>
-        Twitter: @HarvardD4D
+        Twitter: @HarvardD4D -->
       </div>
 
     </div> <!-- /container -->
+
+    <!-- <div class='bottom' style='margin:50px'></div> -->
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="dist/js/bootstrap.min.js"></script>
+    <script>
+      $('[data-spy="scroll"]').each(function () {
+        var $spy = $(this).scrollspy('refresh');
+      })
+    </script>
   </body>
 </html>
