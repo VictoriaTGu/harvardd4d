@@ -29,39 +29,60 @@
 
   <body data-spy='scroll' data-target='.navbar-collapse'>
 
-    <!-- Fixed navbar -->
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
+    <!-- <div id='wrap'> -->
+
+      <!-- Fixed navbar -->
+      <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <!-- <a class='navbar-brand' href='#'><img src="{% static 'img/d4d_logo.jpg' %}" style='height:30px'></a> -->
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li class='dropdown'>
+                <a href='#initiatives'>Initiatives</a>
+                <ul class='dropdown-menu'>
+                  <li><a href='#initiatives'>Term-time project </a>
+                </ul>
+              </li>
+              <li><a href="#updates">Updates</a></li>
+              <li><a href='#resources'>Resources</a></li>
+              <li><a href="#footer">Contact</a></li>
+            </ul>
+  <!--         <ul class="nav navbar-nav navbar-right">
+            <li><a class="navbar-brand" href="#">Developers for Development</a></li>
+            <li><img class="navbar-logo" src="{% static 'img/d4d_globe.jpg' %}"></li>
+          </ul> -->
+        </div><!--/.nav-collapse -->
         </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li class='dropdown'>
-              <a href='#initiatives'>Initiatives</a>
-              <ul class='dropdown-menu'>
-                <li><a href='#initiatives'>Term-time project </a>
-              </ul>
-            </li>
-            <li><a href="#updates">Updates</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a class="navbar-brand" href="#">Developers for Development</a></li>
-          <li><img class="navbar-logo" src="{% static 'img/d4d_globe.jpg' %}"></li>
-        </ul>
-      </div><!--/.nav-collapse -->
+      </div>
+
+      {% block content %}
+      {% endblock %}
+
+      <!-- <div id='push'></div> -->
+
+    <!-- </div> -->
+
+    <div id='footer'>
+      <div id='footer-logo'>
+        <img src="{% static 'img/d4d_logo.jpg' %}" style='height:50px; margin-top:5px;'>
+      </div>
+      <div id='footer-contact'>
+        <a href="mailto:harvardd4d@gmail.com"><img src="{% static 'img/email.png' %}" class='contact-pic' title='Email'></a>
+        <a href="http://www.twitter.com/harvardd4d" ><img src="{% static 'img/twitter.png' %}" class='contact-pic' title='Twitter'></a>
+        <a href="http://www.facebook.com/developersfordevelopment" title='Facebook'><img src="{% static 'img/facebook.png' %}" class='contact-pic'></a>
+        <a href="http://harvardd4d.tumblr.com"><img src="{% static 'img/tumblr.png' %}" class='contact-pic' title='Tumblr'></a>
       </div>
     </div>
 
-    {% block content %}
-    {% endblock %}
   </body>
   </html>
