@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+	<div class="outside">
+      <div class="message">
+        <div class="container info">
+          <center>
+          	{% for partner in partners %}
+          	<div class="row">
+          		<div class="col-md-4">
+          			<a href="{{ partner.website }}">
+          			<h1>{{ partner.name }}</h1>
+          			{% if partner.logo %}
+          				<img style="width:70px;" src="{{MEDIA_URL}}{{ partner.logo }}"></img>
+          			{% endif %}
+          			</a>
+          		</div>
+	            <div class="col-md-8">
+		            <p>{{ partner.description }}</p>
+		            <p>Tags:
+          			{% for tag in partner.tags.all %}
+          				{{ tag.name }}
+          			{% endfor %}
+          			</p>
+		        </div>
+        	</div>
+            {% endfor %}
+          </center>
+        </div>
+      </div>
+    </div>
+{% endblock %}

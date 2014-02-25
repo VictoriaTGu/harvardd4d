@@ -1,8 +1,11 @@
 from django.db import models
 from accounts.models import UserProfile
 
+def content_file_name(instance, filename):
+    return '/'.join(['orgs', instance.name, filename])
+
 class Tag(models.Model):
-	name = models.CharField(max_length=5)
+	name = models.CharField(max_length=20)
 
 	def __str__(self):
 		return self.name
@@ -10,9 +13,9 @@ class Tag(models.Model):
 # Create your models here.
 class Partner(models.Model):
     name = models.CharField(max_length=50)
-    website = models.CharField(max_length=100)
-    logo = models.CharField(max_length=100, blank=True)
-    picture = models.CharField(max_length=100, blank=True)
+    website = models.URLField()
+    logo = models.FileField(upload_to=content_file_name, blank=True)
+    picture = models.FileField(upload_to=content_file_name, blank=True)
     video = models.CharField(max_length=100, blank=True)
     description = models.CharField(max_length=1500)
     tags = models.ManyToManyField(Tag)
@@ -36,7 +39,7 @@ class Project(models.Model):
 	users = models.ManyToManyField(UserProfile)
 	problem = models.CharField(max_length=3000)
 	proposal = models.CharField(max_length=5000)
-	picture = models.CharField(max_length=100, blank=True)
+	picture = models.FileField(upload_to=content_file_name)
 	video = models.CharField(max_length=100, blank=True)
 	timeline = models.CharField(max_length=1000)
 	Project_STAGES = (('research', 'Research'), ('ideas', 'Ideas'), ('prototype', 'Prototype'), ('feedback', 'Feedback'), ('deployment', 'Deployment'))

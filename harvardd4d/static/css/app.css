@@ -13,9 +13,13 @@ p {
 }
 
 .info {
-	margin: 50px 55px;
+	margin: 50px 100px;
 	background: rgba(225, 225, 225, .7);
 	padding: 30px;
+}
+
+a, .panel-title {
+	cursor: pointer; cursor: hand;
 }
 
 html { 
@@ -28,6 +32,7 @@ html {
 
 body, html {
 	height: 100%;
+	text-align: center;
 }
 
 .outside {

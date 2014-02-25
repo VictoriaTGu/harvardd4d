@@ -1,0 +1,162 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 0px;
+  font-family: 'Open Sans', sans-serif!important;	
+}
+
+body p {
+	 text-align:left; font-size:12px;
+}
+
+.signup_button {margin-top:30px;}
+.judge-button {margin-top:20px; margin-bottom:20px;}
+.topmargin {margin-top:40px;}
+.btn {border-radius:0px!important;}
+.btn-default {margin-bottom:25px;}
+
+.navbar {
+	font-family: 'Open Sans', sans-serif;	
+}
+.navbar-collapse{
+	background-color: rgba(10, 10, 10, 0.9);
+}
+.navbar-inverse
+{
+	margin-bottom: -50px!important;
+	background-color: rgba(10, 10, 10, 0.9);
+	margin-bottom: -50px!important;
+	border-bottom: none;
+}
+.navbar-toggle {
+	border-radius: 2px;
+}
+.navbar-brand {
+	 font-family: ‘Metrophobic’, Arial, serif; font-weight: 400;
+	 color:#ddd!important;
+	 }
+	 
+.jumbotron {
+	/*background: url("assets/img/background.jpg") no-repeat;
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
+	background-size: 100%;*/
+    background: url(assets/img/bg.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	height:500px;  
+	padding-bottom: 20px;
+	margin-bottom:0px;
+	color:#eee;
+}
+	.jumbotron h5 {
+		font-size:18px;
+	}
+.splash {
+	text-align:center;
+	padding-top:100px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.splash h1{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	margin:0px auto;
+	font-size: 48px;
+	padding-bottom: 60px;
+}
+#signup_button {
+	margin-top:35px;
+	width:300px;
+	
+}
+.feature {
+	/*border-top:1px solid #000;*/
+	padding-top:10px;
+	text-align:center;
+}
+
+.feature p {
+	color: #555;
+	}
+
+.aboutbackground {
+background-color: #5C90BC;
+}
+#about h3 {color:#fff;
+margin-bottom: 40px;
+font-family: 'Open Sans';
+font-weight: 300;}
+#about h4 {color:#fff;text-align:left;border-bottom: 1px solid #CCC;}
+#about p {color:#ddd;}
+.aboutlink {color:#ddd;}
+
+#projects, #schedule, #sponsors {
+padding-top: 10px;
+}
+h3{font-weight:300;font-family:'Open Sans'!important;}
+
+.schedulecontainer{
+	background-color: #E7FAE7;
+}
+
+#scheduletable{
+	max-width:70%;
+}
+#scheduletable td{
+	font-size: 10pt;
+	padding-top: 2pt;
+	padding-bottom: 2pt;
+}
+.sponsortitle {
+	border-bottom: 1px solid #E7E7E7;
+	margin-top: 25px;
+	padding-top: 15px;
+	color: #888;
+	text-align:center;
+	}
+#sponsors h4{font-family:'Open Sans';}
+.feature .img-responsive {
+	margin: 0px auto;	
+}
+
+.submitcontainer {
+	background-color: #FAFAFA;
+}
+
+iframe {
+	margin-top: 20px;
+}
+	
+@media (max-width: 500px)
+{
+	.nophone {display:none;}
+	
+	.jumbotron h5 {
+		font-size:18px;
+	margin-top:0px;}
+	
+	.jumbotron h1{
+	font-size:25px;
+	}
+}
+
+
+.feature {
+	margin-top:10px;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+footer {
+padding: 20px;
+text-align: center;
+background-color: #222;
+bottom: 0px;
+color: #EEE;
+}
+footer p {text-align:center;}
+footer img {
+	margin: 0px auto;
+}

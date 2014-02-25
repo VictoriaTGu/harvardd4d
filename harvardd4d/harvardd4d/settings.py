@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
-
+PROJECT_PATH = os.path.dirname(os.path.abspath(__file__))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 SECRET_KEY = 'o#q!#kjh0mh^dzh$)*v@gaatwpd6pypr3%flydvy@*7i+2%ud&'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = True #False
 
 TEMPLATE_DEBUG = True
 
@@ -57,13 +57,27 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
+STATICFILES_FINDERS = (
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+#    'django.contrib.staticfiles.finders.DefaultStorageFinder',
+)
+
 ROOT_URLCONF = 'harvardd4d.urls'
 
 WSGI_APPLICATION = 'harvardd4d.wsgi.application'
 
+# Add in settings
+os.environ['DJANGO_SETTINGS_MODULE'] = 'harvardd4d.settings'
 
 # Database
 # https://docs.djangoproject.com/en/1.6/ref/settings/#databases
+
+# Honor the 'X-Forwarded-Proto' header for request.is_secure()
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+
+# Allow all host headers
+ALLOWED_HOSTS = ['*']
 
 DATABASES = {
     'default': {
@@ -85,12 +99,16 @@ USE_L10N = True
 
 USE_TZ = True
 
+# Media Files
+MEDIA_ROOT = os.path.join(os.path.dirname(__file__), 'media')
+MEDIA_URL = '/media/'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 STATIC_URL = '/static/'
-STATIC_ROOT = '/static/'
+STATIC_ROOT = os.path.join(PROJECT_PATH, 'static/')
 
+# Add in search for static files
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
