@@ -46,16 +46,28 @@
 
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
+						<li class="active"><a href="{% url 'projects:index'%}">Home</a></li>
+						<li><a href="{% url 'projects:about' %}">About</a></li>
             <li class='dropdown'>
-              <a href='#initiatives'>Initiatives</a>
-              <ul class='dropdown-menu'>
-                <li><a href='#initiatives'>Term-time project </a>
+						<a href='#' class="dropdown-toggle" data-toggle="dropdown">Initiatives <b class="caret"></b></a>
+							<ul class='dropdown-menu'>
+								<li><a href="{% url 'projects:titw'%}">Tech in the World</a></li>
+								<li><a href="{% url 'projects:idhack'%}">ID Hack</a></li>
+								<li><a href="{% url 'projects:ttp'%}">Term-Time Projects </a></li>
+								<li><a href="{% url 'projects:discuss'%}">Discussions 4 Development </a> </li>
               </ul>
-            </li>
-            <li><a href="http://harvardd4d.tumblr.com/">Updates</a></li>
-            <li><a href="#contact">Contact</a></li>
+							</li>
+						<li><a href="{% url 'projects:events'%}">Events</a></li>
+						<li class='dropdown'>
+						<a href='#' class="dropdown-toggle" data-toggle="dropdown">Get Involved <b class="caret"></b></a>
+						<ul class='dropdown-menu'>
+							<li><a href="{% url 'projects:external' %}">Parter with Us</a></li>
+							<li><a href="{% url 'projects:partners' %}">Current Partners</a></li>
+							<li><a href="{% url 'projects:sponsors' %}">Sponsor Us</a></li>
+							<li><a href="{% url 'projects:past_sponsors' %}">Our Sponsors</a></li>
+						</ul>
+						</li>
+						<li><a href="{% url 'projects:contact_us' %}">Contact Us</a></li>
           </ul>
         <ul class="nav navbar-nav navbar-right">
           <li><a class="navbar-brand" href="#">Developers for Development</a></li>
