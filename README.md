@@ -9,9 +9,7 @@ Website of Harvard College Developers for Development
 2. instally pip
 3. pip install virtualenv
 4. virtualenv venv
-5. source venv/bin/activate
-#### For Windows:
-5. venv\Scripts\activate
+5. source venv/bin/activate (For Windows: venv\Scripts\activate)
 6. pip install -r harvardd4d/requirements.txt
 
 #### to deactivate
