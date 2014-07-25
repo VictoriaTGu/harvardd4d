@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+
+    <div class="container info" id="about">
+
+      <!-- Main component for a primary marketing message or call to action -->
+      <div>
+        <h1>About D4D</h1>
+        <h3>Inspire. Innovate. Impact.</h3>
+        <center><img src="{% static 'img/d4d_logo.jpg' %}"></center>
+        <br/>
+        <p>Harvard College Developers for Development (D4D) was founded in spring of 2012 by Alisa Nguyen, Victoria Gu, and Joy Ming in order to bring together two previously disparate communities--those interested in international development and those interested in technology--to help use "new" technologies to solve "old" problems in the developing world. D4D has worked to increase awareness for and involvement in social impact technology across the Harvard campus through projects, events, and more!</p>
+        <h3>What is social impact technology?</h3>
+        <p>A common term for social impact technology is Information Communications Technology for Development (ICT4D), which includes applications that improve lives in the fields of socioeconomic development, international development, and human rights. This can span across many different fields, including healthcare, government, finance, education, agriculture, and more. For more information about ICT4D and other efforts related to D4D, check out the <a href='#resources'>related resources</a>.
+        <h3>Current leadership</h3>
+        <div class='row'>
+          <div class='col-md-3'>
+            <div class='thumbnail'>
+              <img src="{% static 'img/alisa.jpg' %}" class='board-pic'>
+              <div class='caption'>
+                <h4>Alisa Nguyen</h4>
+                Tech in the World Co-Director
+              </div>
+            </div>
+          </div>
+          <div class='col-md-3'>
+            <div class='thumbnail'>
+              <img src="{% static 'img/victoria.jpg' %}" class='board-pic'>
+              <div class='caption'>
+                <h4>Victoria Gu</h4>
+                Tech in the World Co-Director
+              </div>
+            </div>
+          </div>
+          <div class='col-md-3'>
+            <div class='thumbnail'>
+              <img src="{% static 'img/kevin.jpg' %}" class='board-pic'>
+              <div class='caption'>
+                <h4>Kevin Sun</h4>
+                ID Hack Director
+              </div>
+            </div>
+          </div>
+          <div class='col-md-3'>
+            <div class='thumbnail'>
+              <img src="{% static 'img/joy.jpg' %}" class='board-pic'>
+              <div class='caption'>
+                <h4>Joy Ming</h4>
+                External and Internal Relations
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div> <!-- /container -->
+    
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script>
+      $('[data-spy="scroll"]').each(function () {
+        var $spy = $(this).scrollspy('refresh');
+      })
+    </script>
+{% endblock %}
