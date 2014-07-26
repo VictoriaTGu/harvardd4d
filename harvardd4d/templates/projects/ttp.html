@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+  
+  <div class="outside">
+    <div class="container-fluid info">
+
+      <!-- Main component for a primary marketing message or call to action -->
+      <div>
+        <h1>Term-Time Projects</h1>
+        <p>D4D’s Term-Time Projects connects students who are interested in social impact and technology to innovative projects that seek to develop solutions to challenges from non-profit and other international development organizations. This connection benefits both sides: it gives students the initiative to get involved in international development and gain teamwork, coding, and problem solving experience; at the same time, it moves forward proposed solutions to global issues and helps non-profit organizations in human resource, infrastructure improvement, and presence building at Harvard. Students also have the option to create their own project and lead it to completion. By providing a bridge for students and impact projects, Term-Time Project addresses the lack of non-profit opportunities for CS students on campus, raises awareness for international development challenges, and encourages students to contribute to the effort of solving these challenges.</p>
+      </div>
+
+    </div> <!-- /container -->
+  </div><!-- outside -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script>
+      $('[data-spy="scroll"]').each(function () {
+        var $spy = $(this).scrollspy('refresh');
+      })
+    </script>
+{% endblock %}
