@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+  
+  <div class="outside">
+    <div class="container-fluid info">
+
+      <!-- Main component for a primary marketing message or call to action -->
+      <div>
+        <h1>Contact Us</h1>
+        <p>Contact us @ Email, Facebook, Twitter</p>
+      </div>
+
+    </div> <!-- /container -->
+  </div><!-- outside -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script>
+      $('[data-spy="scroll"]').each(function () {
+        var $spy = $(this).scrollspy('refresh');
+      })
+    </script>
+{% endblock %}
