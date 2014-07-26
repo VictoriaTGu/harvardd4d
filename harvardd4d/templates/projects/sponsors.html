@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+  
+  <div class="outside">
+    <div class="container-fluid info">
+
+      <!-- Main component for a primary marketing message or call to action -->
+      <div>
+        <h1>Sponsor Us</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ultricies tortor neque, sit amet consequat sapien posuere ut. Duis fringilla, quam sed rhoncus rhoncus, sapien mauris volutpat augue, non placerat tellus diam non metus. Maecenas iaculis turpis eu diam rhoncus, imperdiet laoreet dolor sagittis. Nullam vitae massa leo. Proin placerat lacinia enim sed congue. Nullam a imperdiet risus, vitae dictum sem. Cras sagittis turpis eget est vehicula, id faucibus eros eleifend. Vivamus consequat cursus vestibulum. Maecenas vulputate leo ac faucibus lacinia. Quisque vitae suscipit enim. Proin lacus felis, accumsan sit amet eros ornare, viverra varius purus. Sed dapibus lorem id enim elementum cursus. Duis sed nisl non sem accumsan viverra non at magna. Sed rutrum, neque sed convallis fringilla, elit sem lacinia nisl, nec sollicitudin felis lorem eget enim. Sed ac felis nisl.</p>
+        <p>In tincidunt, magna eget placerat porttitor, urna lacus imperdiet felis, vestibulum suscipit lorem leo vel est. Proin varius commodo nulla at blandit. Vestibulum a nibh nec arcu vulputate vestibulum. Curabitur mi arcu, lobortis a eros et, hendrerit convallis enim. Maecenas purus metus, dictum vitae tortor vitae, pretium laoreet nunc. Nulla aliquam ipsum non nulla venenatis, eget rhoncus turpis tincidunt. Praesent elementum tempor nisl, eget euismod orci accumsan vitae. Mauris non enim diam.</p>
+        <p>Etiam euismod libero et tempus posuere. In commodo, leo vel lobortis tempor, ante nisi feugiat quam, eget vehicula dolor arcu eget massa. Praesent a posuere purus. Duis porta justo in nunc iaculis, tristique lacinia orci sodales. Sed sed quam eu sem ultricies volutpat. Cras tempus felis sit amet velit suscipit dictum. Mauris semper consequat orci. Donec tempor hendrerit consectetur. Vivamus congue vulputate nibh, at hendrerit quam consectetur at. Aenean aliquet dictum ante congue molestie.</p>
+      </div>
+
+    </div> <!-- /container -->
+  </div><!-- outside -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script>
+      $('[data-spy="scroll"]').each(function () {
+        var $spy = $(this).scrollspy('refresh');
+      })
+    </script>
+{% endblock %}
