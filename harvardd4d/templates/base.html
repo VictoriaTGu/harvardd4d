@@ -32,6 +32,7 @@
 
       <!-- Fixed navbar -->
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="navbar-inner">
         <div class="container">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -40,12 +41,11 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <!-- <a class='navbar-brand' href='#'><img src="{% static 'img/d4d_logo.jpg' %}" style='height:30px'></a> -->
+            <a class="navbar-brand">Developers for Development</a>
           </div>
 
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-						<li class="active"><a href="{% url 'projects:index'%}">Home</a></li>
 						<li><a href="{% url 'projects:about' %}">About</a></li>
             <li class='dropdown'>
 						<a href='#' class="dropdown-toggle" data-toggle="dropdown">Initiatives <b class="caret"></b></a>
@@ -67,11 +67,8 @@
 						</li>
 						<li><a href="{% url 'projects:contact_us' %}">Contact Us</a></li>
           </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a class="navbar-brand" href="#">Developers for Development</a></li>
-          <li><img class="navbar-logo" src="{% static 'img/d4d_globe.jpg' %}"></li>
-        </ul>
       </div><!--/.nav-collapse -->
+    </div>
     </div>
   </div>
 

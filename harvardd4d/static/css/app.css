@@ -45,7 +45,7 @@ body, html {
 .message {
 	width: 1000px;
 	margin: 0 auto;
-	margin-top: 250px;
+	margin-top: 50px;
 }
 
 .panel-title {
@@ -145,4 +145,21 @@ body, html {
 
 #main {
 	background: white;
+}
+
+.navbar .navbar-inner {
+	background: rgb(51, 51, 51);
+	border-bottom: 3px solid #ff4040;
+}
+
+.navbar .navbar-inner .nav li a {
+	color: white;
+}
+
+.navbar .navbar-inner li.dropdown ul li a {
+	color: black;
+}
+
+.carousel-pic {
+	width: 750px;
 }
