@@ -96,9 +96,10 @@ body, html {
 
 #footer {
 	/*height: 60px;*/
-  background-color: #f5f5f5;
+  background-color: rgb(0, 0, 0);
   padding-left: 20px;
   padding-right: 20px;
+  border-top: 1px solid #228b22;
 }
 
 #footer-logo {
@@ -129,9 +130,6 @@ body, html {
 #footer {
   height: 60px;
 }
-/*#footer {
-  background-color: #f5f5f5;
-}*/
 
 /* Lastly, apply responsive CSS fixes as necessary */
 @media (max-width: 767px) {
@@ -148,9 +146,10 @@ body, html {
 }
 
 .navbar .navbar-inner {
-	background: rgb(51, 51, 51);
-	border-bottom: 3px solid #ff4040;
+	background: rgb(0, 0, 0);
+	border-bottom: 5px solid #228b22;
 }
+
 
 .navbar .navbar-inner .nav li a {
 	color: white;
