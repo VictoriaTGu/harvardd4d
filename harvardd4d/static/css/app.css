@@ -67,6 +67,12 @@ body, html {
 	width: 120px;
 }
 
+.logo-pic {
+	height: 60px;
+}
+.logo-pic-large {
+	height: 90px;
+}
 .caption {
 	text-align: center;
 }

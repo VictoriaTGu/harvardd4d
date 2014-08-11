@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+  
+  <div class="outside">
+    <div class="container-fluid info" id="about">
+
+      <!-- Main component for a primary marketing message or call to action -->
+      <div>
+        <h1>Past Sponsors</h1>
+				<p>Below are the sponsors for IDHack 2014.</p>
+				<h3>Platinum Sponsors</h3>
+				</br>
+				<div class='row'>
+					<div class='col-md-12'>
+						<a href="https://www.intuit.com"> <img src="{% static 'img/intuit.png' %}" class='logo-pic'> </a>
+					</div>
+				</div>
+				</br>
+				</br>
+				<h3>Gold Sponsors</h3>
+				</br>
+				<div class='row'>
+					<div class='col-md-12'>
+						<a href="https://www.jpmorgan.com"> <img src="{% static 'img/jp.png' %}" class='logo-pic-large'> </a>
+					</div>
+				</div>
+				</br>
+				<h3>Silver Sponsors</h3>
+				</br>
+				<div class='row'>
+					<div class='col-md-4'>
+						<a href="http://www.intersystems.com"> <img src="{% static 'img/intersystems.png' %}" class='logo-pic'> </a>
+					</div>
+					<div class='col-md-4'>
+						<a href="https://www.twilio.com"> <img src="{% static 'img/twilio.jpg' %}" class='logo-pic'> </a>
+					</div>
+					<div class='col-md-4'>
+						<a href="https://www.google.com"> <img src="{% static 'img/google.png' %}" class='logo-pic'> </a>
+					</div>
+				</div>
+				</br>
+				</br>
+				<div class='row'>
+					<div class='col-md-4'>
+						<a href="https://www.chipotle.com"> <img src="{% static 'img/chipotle.svg' %}" class='logo-pic-large'> </a>
+					</div>
+					<div class='col-md-4'>
+						<a href="https://www.microsoft.com"> <img src="{% static 'img/microsoft.jpg' %}" class='logo-pic-large'> </a>
+					</div>
+					<div class='col-md-4'>
+						<a href="https://www.mckinsey.com"> <img src="{% static 'img/mckinsey.png' %}" class='logo-pic-large'> </a>
+					</div>
+				</div>
+				</br>
+				</br>
+				<h3> Bronze Sponsors </h3>
+				</br>
+				<div class='row'>
+					<div class='col-md-3'>
+						<a href="https://www.bwater.com"> <img src="{% static 'img/bridgewater.jpg' %}" class='logo-pic'> </a>
+					</div>
+					<div class='col-md-3'>
+						<a href="https://www.dropbox.com"> <img src="{% static 'img/dropbox.png' %}" class='logo-pic'> </a>
+					</div>
+					<div class='col-md-3'>
+						<a href="http://www.foodshouldtastegood.com"> <img src="{% static 'img/foodjpg.jpg' %}" class='logo-pic'> </a>
+					</div>
+					<div class='col-md-3'>
+						<a href="http://www.annastaqueria.com"> <img src="{% static 'img/anna.png' %}" class='logo-pic'> </a>
+					</div>
+				</div>
+      </div>
+    </div> <!-- container-fluid -->
+  </div><!-- outside -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script>
+      $('[data-spy="scroll"]').each(function () {
+        var $spy = $(this).scrollspy('refresh');
+      })
+    </script>
+{% endblock %}
